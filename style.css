@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: hsl(30, 38%, 92%);
+    position: relative;
+}
+.wrapper{
+    max-width: 330px;
+    padding: 15px;
+    position: absolute;
+    display: flexbox;
+    flex-shrink: 1;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero{
+    content: url(src/product-preview-card-component-main/images/image-product-mobile.jpg);
+    max-width: 330px;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.text-container{
+    background-color: hsl(0, 0%, 100%);
+    margin-top: -10px;
+    max-width: 330px;
+    min-height: max-content;
+    padding: 20px;
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+}
+.bold{
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+    line-height: 1.5ch;
+    font-weight: 700 ;
+  
+}
+.title{
+    color: hsl(212, 21%, 14%);
+    padding: 10px 0;
+}
+.light{
+    color: hsl(228, 12%, 48%);
+    font: 14px 'Montserrat', sans-serif;
+    line-height: 2ch;
+}
+.preview{
+    text-transform: uppercase;
+    letter-spacing: 0.5ch;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.price{
+    color: hsl(158, 36%, 37%);
+}
+.prices{
+    display: inline-flex;
+    align-items: center;
+    margin: 20px 0;
+}
+.discount{
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+.cta{
+    background: hsl(158, 36%, 37%);
+    padding: 15px 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+.cta >p{
+    font: 14px 'Montserrat', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin-left: 10px;
+}
+.ic-cart{
+    content: url(src/product-preview-card-component-main/images/icon-cart.svg);
+}
+
+@media only screen and (min-width: 1440px){
+    .wrapper{
+        max-width: 640px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero{
+        content: url(src/product-preview-card-component-main/images/image-product-desktop.jpg);
+        border-radius: 0px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .text-container{
+        margin-top: 0;
+        padding: 0;
+        border-radius: 0px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        padding: 25px;
+    }
+    .bold{
+        font-size: 35px ;
+        margin-top: 10px;
+    }
+    .title{
+        margin-bottom: 20px;
+    }
+    .price{
+        margin-bottom: 10px;
+    }
+    .light{
+        font-size: 16px;
+    }
+}
