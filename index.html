@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Front end mentor challenge to make a product preview card">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/product-preview-card-component-main/images/favicon-32x32.png" type="image/x-icon">
     <title>Product Preview Card</title>
 </head>
 <body>
@@ -15,23 +16,23 @@
          <div class="wrapper">
             <div class="img hero"></div>
             <div class="text-container">
-               <p class="preview light">perfume</p>
+              <section aria-label="Product Type"> <p class="preview light">perfume</p></section>
               <main aria-label="title">
                  <h1 class="title bold"> Gabrielle Essence Eau De Parfum</h1> </main>
                
-                 <p class="desc light">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-                Perfumer-Creator for the House of CHANEL.</p>
+                 <article aria-label="Product Description"><p class="desc light">A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+                Perfumer-Creator for the House of CHANEL.</p></article>
                 
                  
-                    <div  class="prices">
+                    <section aria-label="Price of Product"><div  class="prices">
                         <h2 class="price bold">$149.99</h2>
                         <p class="light discount">$169.99</p>
-                    </div>
+                    </div></section>
                 
-                        <div class="cta">
+                        <section aria-label="Add to cart"><div class="cta">
                                     <i class="ic-cart"></i>
                                     <p>Add to cart</p></span>
-                        </div>
+                        </div></section>
                 
             </div>
         </div>
