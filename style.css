@@ -79,6 +79,12 @@
     display: flex;
     flex-direction: row;
     border-radius: 10px;
+    transition: background-color 500ms ;
+    transition: border-radius 500ms;
+}
+.cta:hover{
+    background-color: hsl(158, 51%, 28%);
+    border-radius: 5px;
 }
 .cta >p{
     font: 14px 'Montserrat', sans-serif;
